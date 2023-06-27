@@ -15,6 +15,7 @@ library(ggpubr)
 
 ################################################################################ 1. Importing data
 s_data <- read_excel("C:/Users/max0j/OneDrive/Escritorio/McGill - PhD/Rotations/Rotation  3 - Catherine Potvin/Project 1 CarbonMonitoring/MJ_SARDINILLA_ALL_YEARS.xlsx")
+
 # remove dead trees
 s_data <- s_data %>% filter(Status != "Dead")
 
@@ -103,11 +104,10 @@ s_data %>%
   ylab("Height (cm)") +
   ggtitle("Height vs DBH Sardinilla")
 
-# SUMMARY
+## SUMMARY
 # clearest pattern is seen in ln(height) vs DBH
 
 ################################################################################ 2. Testing Regressions
-#                                                                               AIGHT TO SEE
 # a:
 # all species
 # DBH
@@ -291,7 +291,7 @@ plot_grid(plotlist=graph, nrow = 2, ncol = 2)
 # lHeight ~ lDBH
 
 
-############ ################################################################### TESTING EQUATIONS
+################################################################################ TESTING EQUATIONS
 glm2Test <- function(D) {
   lH <- 5.4015 + 0.642*log(D)
   return(lH)
@@ -376,20 +376,12 @@ df_t %>%
   ggplot(aes(x = DBH, y= value, color = variable))+
   geom_point()
 
-### Generate random data and test
-
-
-##                                                                              how to use ?
-## predict(glm2, newdata = list, interval = 'confidence')
-
 
 ################################################################################ IPETI DATA
 i_data <- fread("C:/Users/max0j/OneDrive/Escritorio/McGill - PhD/Rotations/Rotation  3 - Catherine Potvin/CarbonMonitoring/IpetiData/Data Sharing Summer 2023/Data_Sharing_PotvinLab_R/data/baseline_table.csv")
 i_data <- i_data %>% filter(survival != 0) %>% select(-c("monotype", "owner"))
 
-#                                                                               units unsure
-#we assuming height in m and dbh in cm 
-
+# units unsure, we are assuming height in m and dbh in cm 
 
 # Visualsing height - DBH 
 i_data %>% 
@@ -611,8 +603,6 @@ data$chave.lheight <- chaveTest(data$dbh)
 data$chave.height <- exp(data$chave.lheight)*100 #was in m
 data$glm2_i.lheight <- glm2_iTest(data$dbh)
 data$glm2_i.height <- exp(data$glm2_i.lheight)
-
-
 
 data %>%
   mutate(glmfit = exp(fitted(glm))) %>%
