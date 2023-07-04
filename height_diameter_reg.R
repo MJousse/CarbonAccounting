@@ -183,15 +183,14 @@ glm2 <- lm(log(Height)~lDBH, data = s_data)
 Pglm2 <- s_data %>%
   select(Height, DBH, lDBH, SpeciesCode) %>%
   drop_na() %>%
-  mutate(lHeight = log(Height),C = exp(chaveTest(DBH))*100, glmfit = exp(fitted(glm2))) %>%
+  mutate(lHeight = log(Height), glmfit = exp(fitted(glm2))) %>%
   ggplot(aes(x=DBH))+
-  geom_bin_2d(aes(y = Height), bins = 25, drop = TRUE) + scale_fill_viridis(discrete = FALSE)+
-  #geom_point(aes(y=Height))+
+  geom_bin_2d(aes(y = Height), bins = 25, drop = TRUE)+ 
+  scale_fill_viridis(discrete = FALSE)+
   geom_line(aes(y=glmfit), linetype = "dashed", color = "blue")+
-  geom_line(aes(y=C), color = "red")+
   xlab("DBH (cm)") +
   ylab("Height") +
-  ggtitle("Ln Height vs DBH, Sardinilla")
+  ggtitle("Height vs DBH, Sardinilla")
 
 
 
