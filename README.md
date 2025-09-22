@@ -1,8 +1,13 @@
 # Carbon Accounting in Embera communities of the Bayano lake area, Panama 
-Maximiliane Jousse, Madelaine Chongo, Grady Zappone, & Catherine Potvin.
+Maximiliane Jousse (1), Madelaine Chongo, Grady Zappone (1), & Catherine Potvin (1, 2).
+
 2023
 
-## Overview
+Affiliations:
+1) Department of Biology, McGill University
+2) Smithsonian Tropical Research Institute
+
+## Overview 
 
 ## The Calculator
 ### Methods
