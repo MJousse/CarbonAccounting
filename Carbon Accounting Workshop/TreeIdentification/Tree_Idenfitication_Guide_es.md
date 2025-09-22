@@ -37,6 +37,8 @@
 * sus ramas son gruesas cuando es adulta 
 * su hoja verde claro
 
+![Cedro Amargo](./Images/cedroamargo_bark.jpg) ![Cedro Amargo](./Images/cedroamargo_leaf.jpg)
+
 ## cedro espino
 * mucha espina en su corteza  
 * muy poca hoja cunado es adulta
@@ -52,6 +54,8 @@
 * muy poca hoja cuando es pequeño
 * su hoja es grande y ancho
 * corteza gruesa rustica
+
+![Espave](./Images/espave_bark.jpg) ![Guayacan](./Images/espave_leaf.jpg)
 
 ## guayacán
 * su corteza es rustica 
