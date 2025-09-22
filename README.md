@@ -4,8 +4,8 @@ Maximiliane Jousse (1), Madelaine Chongo, Grady Zappone (1), & Catherine Potvin 
 2023
 
 Affiliations:
-1) Department of Biology, McGill University
-2) Smithsonian Tropical Research Institute
+1) Department of Biology, McGill University, Montreal, QC, Canada
+2) Smithsonian Tropical Research Institute, Panama City, Panama
 
 ## Overview 
 
