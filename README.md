@@ -88,9 +88,6 @@ This repo is split into two major folders. One is dedicated to the Workshop, and
     ├── README.md
     ├── Calculadora de Carbono_ChaveEqn.xlsx
     ├── Calculadora de Carbono_Sardinilla.xlsx
-    ├── Data
-        ├── baseline_table.csv
-        └── MJ_SARDINILLA_ALL_YEARS.xlsx
     └── Calculator Development
         ├── HeightDiameterModels_Exploration.Rmd
         ├── HeightDiameterModels_Exploration.html
