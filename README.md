@@ -26,8 +26,9 @@ This project's aims were as follow:
 The carbon calculator is an **excel spreadsheet** with built-in calculations which approximates tree height, above ground biomass, and carbon concentration for each tree input. It then aggregates data per plot and produces an estimation of carbon concentration at the plot level, where plot is a designated number of trees. The carbon calculator (deployed version) can be found in `Carbon Accounting Workshop/Calculadora de Carbono_VersionLibreOfficeFINAL.xlsx`. 
 
 ### Methods
-Method development can be seen in `CarbonCalculator/Calculator Development`. Taxonomic identification was corroborated by Jorge Valdes. The current version of the calculator calculates different estimates of carbon depending on tree species (see `TreeIdentification\Tree_Identification_Guide_es.md` for species).
-
+   Method development can be seen in `CarbonCalculator/Calculator Development`. Taxonomic identification was corroborated by Jorge Valdes. The current version of the calculator calculates different estimates of carbon depending on tree species (see `TreeIdentification\Tree_Identification_Guide_es.md` for species).
+   Using existing data from tree inventory plots in 1) Sardinilla (see [project](https://treedivnet.ugent.be/experiments/Sardinilla.html for more information), and 2) Lake Bayano Area tree data, we relate DBH (diameter at breast height; cm) to height (m) with glms. Results are compared with Chave's equation (Chave et al. 2014). Using the outputs from the allometric equation, we then estimate carbon biomass. 
+   
 #### Data collection
 *El protocolo se puede encontrar en español por `Carbon Accounting Workshop/WorkshopMaterial_Es.pdf`.*
 
@@ -128,3 +129,4 @@ This repo is split into two major folders. One is dedicated to the Workshop, and
 * Chave, J., Réjou-Méchain, M., Búrquez, A., Chidumayo, E., Colgan, M.S., Delitti, W.B.C., Duque, A., Eid, T., Fearnside, P.M., Goodman, R.C., Henry, M., Martínez-Yrízar, A., Mugasha, W.A., Muller-Landau, H.C., Mencuccini, M., Nelson, B.W., Ngomanda, A., Nogueira, E.M., Ortiz-Malavassi, E., Pélissier, R., Ploton, P., Ryan, C.M., Saldarriaga, J.G. and Vieilledent, G. (2014), Improved allometric models to estimate the aboveground biomass of tropical trees. Glob Change Biol, 20: 3177-3190. https://doi.org/10.1111/gcb.12629
 * Chave, J., Coomes, D., Jansen, S., Lewis, S.L., Swenson, N.G., Zanne, A.E. 2009. Towards a worldwide wood economics spectrum. Ecology Letters 12(4): 351-366
 * Thomas, S.C.; Martin, A.R. Carbon Content of Tree Tissues: A Synthesis. Forests 2012, 3, 332-352.
+* https://treedivnet.ugent.be/experiments/Sardinilla.html
