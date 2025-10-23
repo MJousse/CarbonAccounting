@@ -27,7 +27,10 @@ The carbon calculator is an **excel spreadsheet** with built-in calculations whi
 
 ### Methods
    Method development can be seen in `CarbonCalculator/Calculator Development`. Taxonomic identification was corroborated by Jorge Valdes. The current version of the calculator calculates different estimates of carbon depending on tree species (see `TreeIdentification\Tree_Identification_Guide_es.md` for species).
-   Using existing data from tree inventory plots in 1) Sardinilla (see [project](https://treedivnet.ugent.be/experiments/Sardinilla.html for more information), and 2) Lake Bayano Area tree data, we relate DBH (diameter at breast height; cm) to height (m) with glms. Results are compared with Chave's equation (Chave et al. 2014). Using the outputs from the allometric equation, we then estimate carbon biomass. 
+
+#### Carbon Calculator Development
+   Using existing data from tree inventory plots in 1) Sardinilla (see [project](https://treedivnet.ugent.be/experiments/Sardinilla.html) for more information), and 2) Lake Bayano Area tree data, we relate DBH (diameter at breast height; cm) to height (m) with glms. Results are compared with Chave's equation (Chave et al. 2014). Using the outputs from the chosen allometric equation, we then use equations to estimate tree biomass. Finally, we relate Tree biomass to above ground carbon. Methods are derived from Chave et al. (2009) and Thomas & Martin (2012).
+   To access Sardinilla data, please contact [Dr. Florian Schnabel](florian.schnabel@waldbau.uni-freiburg.de). Raw Lake Bayano Area tree data is availabile in the `Carbon Calculator/Data/baseline_table.csv`.
    
 #### Data collection
 *El protocolo se puede encontrar en español por `Carbon Accounting Workshop/WorkshopMaterial_Es.pdf`.*
@@ -89,6 +92,8 @@ This repo is split into two major folders. One is dedicated to the Workshop, and
     ├── README.md
     ├── Calculadora de Carbono_ChaveEqn.xlsx
     ├── Calculadora de Carbono_Sardinilla.xlsx
+    ├── Data
+        └── baseline_table.csv
     └── Calculator Development
         ├── HeightDiameterModels_Exploration.Rmd
         ├── HeightDiameterModels_Exploration.html
@@ -130,3 +135,10 @@ This repo is split into two major folders. One is dedicated to the Workshop, and
 * Chave, J., Coomes, D., Jansen, S., Lewis, S.L., Swenson, N.G., Zanne, A.E. 2009. Towards a worldwide wood economics spectrum. Ecology Letters 12(4): 351-366
 * Thomas, S.C.; Martin, A.R. Carbon Content of Tree Tissues: A Synthesis. Forests 2012, 3, 332-352.
 * https://treedivnet.ugent.be/experiments/Sardinilla.html
+
+### Further Reading, Useful Links
+* [Early REDD+ Implementation: The Journey of an Indigenous Community in Eastern Panama](https://www.mdpi.com/1999-4907/8/3/67)
+* [Tree diversity increases carbon sequestration](https://uni-freiburg.de/en/tree-diversity-increases-carbon-sequestra/)
+* [Data from: Tree diversity increases carbon stocks and fluxes above but not belowground in a tropical forest experiment](https://datadryad.org/dataset/doi:10.5061/dryad.6hdr7srbf)
+* [Bayano-McGill Reforestation Project](https://www.mcgill.ca/sustainability/commitments/carbon-neutrality/mcgill-bayano-reforestation)
+
