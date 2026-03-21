@@ -83,11 +83,15 @@ This page assigns random rows of trees to be measured. `Cantidad de Lineas en la
 ## The Workshop
 The workshop material, in the original language (spanish), can be found at `Carbon Accounting Workshop/WorkshopMaterial_Es.pdf`.
 
+## GEOBON 2023: Monitoring Biodiversity for Action
+The work presented in this repo was presented as a Poster at the [GEOBON 2023 Internatial Conference: Monitoring Biodiversity for Action](https://event.fourwaves.com/geobon-2023/pages). This work was particularly pertinant to the COMMUNITY-BASED MONITORING and COMMUNICATION ACROSS SOCIETY themes. See `GEOBON_Poster.pdf` for the poster.
+
 ## File Structure
 This repo is split into two major folders. One is dedicated to the Workshop, and contains all files used and presented in the workshop. The second is dedicated to the carbon calculator and includes alternative versions of the carbon calculator, data used for development, and exploratory code.
 
 ```
 ├── README.md
+├── GEOBON_Poster.pdf
 ├── CarbonCalculator
     ├── README.md
     ├── Calculadora de Carbono_ChaveEqn.xlsx
